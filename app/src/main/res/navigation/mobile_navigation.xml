@@ -43,11 +43,11 @@
     <fragment
         android:id="@+id/nav_brouser"
         android:name="ru.mirea.sergeev.mireaproject.BrouserFragment"
-        android:label="fragment_brouser"
+        android:label="Browser"
         tools:layout="@layout/fragment_brouser" />
     <fragment
-        android:id="@+id/calculateFragment"
+        android:id="@+id/nav_calculate"
         android:name="ru.mirea.sergeev.mireaproject.CalculateFragment"
-        android:label="fragment_calculate"
+        android:label="Calculate"
         tools:layout="Calculate" />
 </navigation>
