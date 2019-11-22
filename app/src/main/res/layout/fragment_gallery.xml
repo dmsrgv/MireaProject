@@ -7,10 +7,12 @@
 
     <Button
         android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="PLAY"
         android:onClick="onClickPlayMusic"
+        android:background="#000080"
+        android:text="PLAY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.188"
@@ -20,10 +22,12 @@
 
     <Button
         android:id="@+id/button4"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="STOP"
         android:onClick="onClickStopMusic"
+        android:text="STOP"
+        android:background="#000080"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
