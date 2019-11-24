@@ -20,7 +20,7 @@
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="ru.mirea.sergeev.mireaproject.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:label="Sensors"
         tools:layout="@layout/fragment_slideshow" />
 
     <fragment
@@ -32,13 +32,13 @@
     <fragment
         android:id="@+id/nav_share"
         android:name="ru.mirea.sergeev.mireaproject.ui.share.ShareFragment"
-        android:label="@string/menu_share"
+        android:label="Camera"
         tools:layout="@layout/fragment_share" />
 
     <fragment
         android:id="@+id/nav_send"
         android:name="ru.mirea.sergeev.mireaproject.ui.send.SendFragment"
-        android:label="@string/menu_send"
+        android:label="Record"
         tools:layout="@layout/fragment_send" />
     <fragment
         android:id="@+id/nav_brouser"

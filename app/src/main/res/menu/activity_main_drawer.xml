@@ -16,6 +16,18 @@
             android:id="@+id/nav_gallery"
             android:icon="@drawable/music"
             android:title="Music" />
+        <item
+            android:id="@+id/nav_send"
+            android:icon="@drawable/recorder"
+            android:title="Record" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/camera"
+            android:title="Camera" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/sensors"
+            android:title="Sensors" />
     </group>
 
 
