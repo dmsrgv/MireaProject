@@ -1,4 +1,4 @@
-package ru.mirea.sergeev.mireaproject.ui.slideshow;
+package ru.mirea.sergeev.mireaproject.ui.sensors;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -19,7 +19,7 @@ import java.util.List;
 
 import ru.mirea.sergeev.mireaproject.R;
 
-public class SlideshowFragment extends Fragment implements SensorEventListener {
+public class SensorsFragment extends Fragment implements SensorEventListener {
     private TextView azimuthTextView;
     private TextView pitchTextView;
     private TextView rollTextView;
@@ -37,7 +37,7 @@ public class SlideshowFragment extends Fragment implements SensorEventListener {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_slideshow, container, false);
+        View view = inflater.inflate(R.layout.fragment_sensors, container, false);
         sensorManager = (SensorManager)getActivity().getSystemService(Context.SENSOR_SERVICE);
         sensors = sensorManager.getSensorList(Sensor.TYPE_ALL);
         accelerometerSensor = sensorManager

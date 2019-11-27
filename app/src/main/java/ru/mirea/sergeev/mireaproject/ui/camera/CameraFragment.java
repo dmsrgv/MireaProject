@@ -1,4 +1,4 @@
-package ru.mirea.sergeev.mireaproject.ui.share;
+package ru.mirea.sergeev.mireaproject.ui.camera;
 
 import android.Manifest;
 import android.content.Intent;
@@ -12,16 +12,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -32,7 +28,7 @@ import ru.mirea.sergeev.mireaproject.R;
 
 import static android.app.Activity.RESULT_OK;
 
-public class ShareFragment extends Fragment implements View.OnClickListener{
+public class CameraFragment extends Fragment implements View.OnClickListener{
     private static final int REQUEST_CODE_PERMISSION_CAMERA = 100;
     final String TAG = MainActivity.class.getSimpleName();
     private ImageView imageView;
@@ -44,7 +40,7 @@ public class ShareFragment extends Fragment implements View.OnClickListener{
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_share, container, false);
+        View view = inflater.inflate(R.layout.fragment_camera, container, false);
         imageView = view.findViewById(R.id.imageView2);
         bytearrayoutputstream = new ByteArrayOutputStream();
         int permissionStatus = ContextCompat.checkSelfPermission(getActivity(),

@@ -1,4 +1,4 @@
-package ru.mirea.sergeev.mireaproject.ui.send;
+package ru.mirea.sergeev.mireaproject.ui.record;
 
 import android.Manifest;
 import android.content.ContentResolver;
@@ -16,22 +16,18 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
 
 import java.io.File;
 import java.io.IOException;
 
 import ru.mirea.sergeev.mireaproject.R;
 
-public class SendFragment extends Fragment implements View.OnClickListener{
+public class RecordFragment extends Fragment implements View.OnClickListener{
     private static final String TAG = "MainActivity";
     private static final int REQUEST_CODE_PERMISSION = 100;
     private Button startRecordButton;
@@ -46,7 +42,7 @@ public class SendFragment extends Fragment implements View.OnClickListener{
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_send, container, false);
+        View view = inflater.inflate(R.layout.fragment_record, container, false);
         startRecordButton = view.findViewById(R.id.btnStart);
         stopRecordButton = view.findViewById(R.id.btnStop);
 
